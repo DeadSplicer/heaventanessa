@@ -182,11 +182,11 @@ hr {
 #headWrapper {
   padding-top: 40px;
   margin-left: 0px;
-  background: white;
-  background: -webkit-linear-gradient(bottom, #f0f0f0, #ffffff); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom, #f0f0f0, #ffffff); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom, #f0f0f0, #ffffff); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom, #f0f0f0, #ffffff); /* Standard syntax */
+  background: rgba(255,255,255,.85);
+  /* background: -webkit-linear-gradient(bottom, #f0f0f0, #ffffff); */
+  /* background: -o-linear-gradient(bottom, #f0f0f0, #ffffff); */
+  /* background: -moz-linear-gradient(bottom, #f0f0f0, #ffffff);  */
+  /* background: linear-gradient(to bottom, #f0f0f0, #ffffff);  */
 
 }
 #headWrapperPages {
