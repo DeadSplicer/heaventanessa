@@ -79,7 +79,7 @@ body {
     background-size: cover;
 }
 .fixedbgMobile {
-    background-image: url("../images/mobile-background.jpg");
+    background-image: url("../images/mobile-background-2.jpg");
     min-height:120vh;
     background-attachment:fixed;
     background-position: center;
