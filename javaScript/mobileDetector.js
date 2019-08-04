@@ -19,7 +19,8 @@ function isChrome() {
 }
 
   $(".fade-in").hide();
-  $(".fade-in").fadeIn(1000);
+  $(".fade-in").hide(5000);
+  $(".fade-in").fadeIn(4000);
 
 
 if (isMobile.matches) {
@@ -32,6 +33,7 @@ if (isMobile.matches) {
   $("#logo").attr("id", "mobileLogo");
   $(".fixedbg").attr("class", "fixedbgMobile");
   $(".sidebar").attr("class", "sidebar-mobile");
+  $(".sidebar-mobile h2").addClass("center");
 
 }
 else {
