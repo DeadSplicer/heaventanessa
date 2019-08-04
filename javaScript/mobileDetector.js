@@ -48,6 +48,9 @@ $('#mobileMenu').hide();
 
 $('.menu_button').on('click', function(){
   $('#mobileMenu').slideToggle(823, "easeOutExpo");
+
+
+
   //alert("click");
 })
 
