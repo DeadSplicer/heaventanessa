@@ -18,9 +18,11 @@ function isChrome() {
   }
 }
 
-  $(".fade-in").hide();
-  $(".fade-in").hide(5000);
-  $(".fade-in").fadeIn(4000);
+  // $(".fade-in").hide();
+  // $(".fade-in").hide(5000);
+  // $(".fade-in").fadeIn(4000);
+  $(".row").hide();
+  $(".row").fadeIn(1000);
 
 
 if (isMobile.matches) {
