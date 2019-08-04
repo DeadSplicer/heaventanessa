@@ -18,6 +18,9 @@ function isChrome() {
   }
 }
 
+  $(".fade-in").hide();
+  $(".fade-in").fadeIn(1000);
+
 
 if (isMobile.matches) {
   //Conditional script here
