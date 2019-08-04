@@ -33,7 +33,7 @@ if (isMobile.matches) {
   $("#logo").attr("id", "mobileLogo");
   $(".fixedbg").attr("class", "fixedbgMobile");
   $(".sidebar").attr("class", "sidebar-mobile");
-  $(".sidebar-mobile h2").addClass("center");
+  $(".sidebar-mobile h2").css({"font-size": "1em", "margin": "0px", "text-align": "center"});
 
 }
 else {

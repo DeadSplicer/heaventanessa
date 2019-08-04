@@ -71,7 +71,7 @@ body {
 }
 
 .fixedbg {
-    background-image: url("../images/background3.jpg");
+    background-image: url("../images/desktop-background.jpg");
     min-height:120vh;
     background-attachment:fixed;
     background-position: top;
@@ -79,7 +79,7 @@ body {
     background-size: cover;
 }
 .fixedbgMobile {
-    background-image: url("../images/background4.jpg");
+    background-image: url("../images/mobile-background.jpg");
     min-height:120vh;
     background-attachment:fixed;
     background-position: center;
@@ -184,9 +184,9 @@ hr {
 }
 
 #headWrapper {
-  padding-top: 40px;
+  padding-top: 10px;
   margin-left: 0px;
-  background: rgba(255,255,255,.85);
+  background: rgba(111,175,183,1);
   /* background: -webkit-linear-gradient(bottom, #f0f0f0, #ffffff); */
   /* background: -o-linear-gradient(bottom, #f0f0f0, #ffffff); */
   /* background: -moz-linear-gradient(bottom, #f0f0f0, #ffffff);  */
@@ -194,15 +194,10 @@ hr {
 
 }
 #headWrapperPages {
-  padding-top: 40px;
+  padding-top: 10px;
   margin-left: 0px;
-  /*background: #232323;*/
-  background: white; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(bottom, #f0f0f0, #ffffff); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom, #f0f0f0, #ffffff); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom, #f0f0f0, #ffffff); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom, #f0f0f0, #ffffff); /* Standard syntax */
   /*background: rgba(255, 255, 255, .1);*/
+  background: rgba(111,175,183,1);
   border-bottom: 1px solid black;
 }
 
@@ -217,7 +212,7 @@ hr {
 
 #mobileMenu {
   border-style: none;
-  background-color: #232323;
+  background-color: #6fafb7;
   /*padding: 1px;*/
   display: block;
   margin: 0px;
@@ -248,7 +243,10 @@ footer {
   top: 10px;
 }
 .sidebar-mobile {
-  padding-bottom: 5em;
+  padding-bottom: 1em;
+}
+#sidebar-mobile {
+  font-size: 1px;
 }
 
 
@@ -273,9 +271,9 @@ footer {
 }
 
 .button {
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
+  transition: color 0.3s;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
   /* padding-right: 10px; */
   padding: 0px 5px 0px 5px;
   background-color: #6fafb7;
@@ -286,16 +284,16 @@ footer {
   color: #2b6c75;
 }
 a.sidebar-button-mobile {
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
+  transition: color 0.3s;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
   /* padding-right: 10px; */
   text-align: center;
 }
 .sidebar-button {
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
+  transition: color 0.3s;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
   /* padding-right: 10px; */
 }
 
