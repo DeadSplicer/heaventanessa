@@ -1,4 +1,4 @@
-var isMobile = window.matchMedia("only screen and (max-width: 767px)");
+var isMobile = window.matchMedia("only screen and (max-width: 840px)");//was 767px
 
 //check if the user is using chrome (used to determine how to handle the input)
 function isChrome() {
