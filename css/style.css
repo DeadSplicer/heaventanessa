@@ -52,8 +52,6 @@ html {
 }
 
 
-
-
 body {
   /*background: #232323 url("../images/background2.jpg");
   background-position: top;
@@ -113,6 +111,7 @@ body {
 
 }
 
+
 /*#headWrapperPages.banner {
   background: url("../images/banner2cr.jpg");
   background-position: center;
@@ -152,6 +151,12 @@ h2 {
   line-height: 1;
   /* word-wrap: break-word; */
 }
+h2 .sidebar-button {
+  font-size: 1.4vw;
+  /* font-size: 1.2em; */
+}
+
+
 
 h3 {
   font-family: 'Comfortaa', cursive;
@@ -199,6 +204,9 @@ hr {
   /*background: rgba(255, 255, 255, .1);*/
   background: rgba(111,175,183,1);
   border-bottom: 1px solid black;
+  /* position:fixed;
+  width: 100%;
+  z-index: 1; */
 }
 
 #desktopMenu {
@@ -228,6 +236,7 @@ footer {
   height:20px;
   background:rgba(255, 255, 255, .2);
   color: rgba(0, 0, 0, 1);
+  /* z-index: -1; */
 }
 
 .thumbnail{
@@ -241,15 +250,14 @@ footer {
   padding-bottom: 5em;
   position: sticky;
   top: 10px;
+  text-align: left;
 }
 .sidebar-mobile {
-  padding-bottom: 1em;
+  padding-top: 0;
+  padding-bottom: 1.5em;
+  line-height: 5px;
+  position: static;
 }
-#sidebar-mobile {
-  font-size: 1px;
-}
-
-
 
 #footer {
    position:fixed;
@@ -262,6 +270,7 @@ footer {
 }
 #toTop {
   padding: 10px;
+  /* z-index: 1; */
 }
 
 
@@ -301,6 +310,10 @@ a.sidebar-button-mobile {
   -moz-transition: color 0.3s;
   /* padding-right: 10px; */
   text-align: center;
+}
+h2 .sidebar-button-mobile {
+  font-size: .6em;
+  /* font-size: 1.2em; */
 }
 .sidebar-button {
   transition: color 0.3s;
@@ -355,4 +368,14 @@ a.sidebar-button-mobile {
 
 .center {
   text-align: center;
+}
+.center-nav {
+  text-align: center;
+}
+.blank {
+  /* text-align: inherit; */
+}
+
+.col-sm-10 {
+  /* max-width: 100%; */
 }

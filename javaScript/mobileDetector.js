@@ -1,13 +1,13 @@
-var isMobile = window.matchMedia("only screen and (max-width: 840px)");//was 767px
+var isMobile = window.matchMedia("only screen and (max-width: 840px)");//was 767px 840px
 
 //check if the user is using chrome (used to determine how to handle the input)
 function isChrome() {
   var isChromium = window.chrome,
-    winNav = window.navigator,
-    vendorName = winNav.vendor,
-    isOpera = winNav.userAgent.indexOf("OPR") > -1,
-    isIEedge = winNav.userAgent.indexOf("Edge") > -1,
-    isIOSChrome = winNav.userAgent.match("CriOS");
+  winNav = window.navigator,
+  vendorName = winNav.vendor,
+  isOpera = winNav.userAgent.indexOf("OPR") > -1,
+  isIEedge = winNav.userAgent.indexOf("Edge") > -1,
+  isIOSChrome = winNav.userAgent.match("CriOS");
 
   if(isIOSChrome){
     return true;
@@ -18,41 +18,65 @@ function isChrome() {
   }
 }
 
-  // $(".fade-in").hide();
-  // $(".fade-in").hide(5000);
-  // $(".fade-in").fadeIn(4000);
-  $(".row").hide();
-  $(".row").fadeIn(1000);
+// $(".fade-in").hide();
+// $(".fade-in").hide(5000);
+// $(".fade-in").fadeIn(4000);
+$(".row").hide();
+$(".row").fadeIn(1000);
 
+$(document).ready(function () {
+  adjustForMobile();//run when page first loads
+});
 
-if (isMobile.matches) {
-  //Conditional script here
-  $("div #desktopMenu").attr("id", "mobileMenu");
-  $("div a.button").attr("class", "mobileButton");
-  $(".menu_button").show();
-  $("#headWrapper").addClass("center");
-  $("#headWrapperPages").addClass("center");
-  $("#logo").attr("id", "mobileLogo");
-  $(".fixedbg").attr("class", "fixedbgMobile");
-  $(".sidebar").attr("class", "sidebar-mobile");
-  $(".sidebar-mobile h2").css({"font-size": "1em", "margin": "0px", "text-align": "center"});
+$(window).resize(function () {
+  adjustForMobile();//run on every window resize
+});
 
-}
-else {
-  $("div #desktopMenu").attr("id", "desktopMenu");
-  $("div a.mobileButton").attr("class", "button");
-  $(".menu_button").hide();
-}
+function adjustForMobile() {
+
+  if (isMobile.matches) {
+    //Conditional script here
+    $("div #desktopMenu").attr("id", "mobileMenu");                     //change to mobile menu
+    $("div a.button").attr("class", "mobileButton");                    //change to mobile button
+    $(".menu_button").show();                                           //show mobile menu button
+    $("#headWrapper").addClass("center");                               //center the head wrapper (for home)
+    $("#headWrapperPages").addClass("center");                          //center the head wrapper (for pages)
+    $("#logo").attr("id", "mobileLogo");                                //change to mobile logo
+    $(".fixedbg").attr("class", "fixedbgMobile");                       //change background to mobile
+    $(".sidebar").addClass("sidebar-mobile");                      //change sidebar to mobile
+    $(".sidebar-button").attr("class", "sidebar-button-mobile");        //change sidebar buttons to mobile
+    $(".sidebar-mobile h2").css({"font-size": "2em", "margin": "0px", "text-align": "center"});   //change mobile sidebar h2 to center 2em
+
+  }
+  else {
+    $("#desktopMenu").show();                         //show desktopMenu
+    $("div #mobileMenu").attr("id", "desktopMenu");   //change to desktop menu
+    $("div a.mobileButton").attr("class", "button");  //change to desktop button
+    $(".menu_button").hide();                         //hide mobile button
+    $("#headWrapper").removeClass("center");          //remove headWrapper center (home)
+    $("#headWrapperPages").removeClass("center");     //remove headWrapper center (pages)
+    $("#mobileLogo").attr("id", "logo");              //change to mobile logo
+    $(".fixedbgMobile").attr("class", "fixedbg");     //change to dekstop background
+    //$(".sidebar-mobile").attr("class", "sidebar");    //change to desktop sidebar
+$(".sidebar").removeClass("sidebar-mobile");
+    $(".sidebar-button-mobile").attr("class", "sidebar-button");    //change sidebar buttons to desktop
+    $(".sidebar h2").css({"font-size": "inherit", "margin": "inherit", "text-align": "inherit"});   //change sidebar h2 to center 2em
+
+  }
+
 
 $('#mobileMenu').hide();
 
+}
+
+
+
 $('.menu_button').on('click', function(){
   $('#mobileMenu').slideToggle(823, "easeOutExpo");
-
-
+})
 
   //alert("click");
-})
+
 
 //Nothing happens here, so just jog on. Twat.
 // var txt = "";
