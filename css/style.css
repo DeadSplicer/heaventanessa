@@ -218,7 +218,19 @@ hr {
   float: right;
 }
 
+#desktopNavMenu {
+
+}
+
 #mobileMenu {
+  border-style: none;
+  background-color: #6fafb7;
+  /*padding: 1px;*/
+  display: block;
+  margin: 0px;
+}
+
+#mobileNavMenu {
   border-style: none;
   background-color: #6fafb7;
   /*padding: 1px;*/
@@ -248,6 +260,7 @@ footer {
 .sidebar {
   padding-top: 5em;
   padding-bottom: 5em;
+  position: -webkit-sticky;
   position: sticky;
   top: 10px;
   text-align: left;
@@ -255,8 +268,13 @@ footer {
 .sidebar-mobile {
   padding-top: 0;
   padding-bottom: 1.5em;
+  padding-left: 0px;
+  padding-right: 0px;
   line-height: 5px;
-  position: static;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 9999;
 }
 
 #footer {
@@ -343,7 +361,7 @@ h2 .sidebar-button-mobile {
   /*background-color: rgba(255, 255, 255, .9);*/
   font-size: 20px;
   /* border-bottom: 1px solid #232323; */
-  color: white;
+  color: black;
   padding: 20px 5px;
   text-align: center;
   text-decoration: none;
@@ -365,6 +383,14 @@ h2 .sidebar-button-mobile {
   padding: 8px 0 8px 0;
   border-bottom: 1px solid #232323;
 }
+.nav_menu_button{
+  border-style: none;
+  text-align: center;
+  background: #d6d6d6;
+  color: black;
+  padding: 20px 0 20px 0;
+  /* border-bottom: 1px solid #232323; */
+}
 
 .center {
   text-align: center;
@@ -378,4 +404,8 @@ h2 .sidebar-button-mobile {
 
 .col-sm-10 {
   /* max-width: 100%; */
+  z-index: -1;
+}
+.col-sm-2 {
+  /* width: 840px; */
 }

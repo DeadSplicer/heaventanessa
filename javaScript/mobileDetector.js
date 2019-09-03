@@ -1,4 +1,4 @@
-var isMobile = window.matchMedia("only screen and (max-width: 840px)");//was 767px 840px
+var isMobile = window.matchMedia("only screen and (max-width: 991px)");//was 767px 840px
 
 //check if the user is using chrome (used to determine how to handle the input)
 function isChrome() {
@@ -17,6 +17,24 @@ function isChrome() {
     return false;
   }
 }
+
+
+//Test if user is using MS Edge. Disable sticky sidebar if they are.
+if (/MSIE 10/i.test(navigator.userAgent)) {
+   // This is internet explorer 10
+   // window.alert('isIE10');
+}
+if (/MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {
+    // This is internet explorer 9 or 11
+    // window.location = 'pages/core/ie.htm';
+}
+if (/Edge\/\d./i.test(navigator.userAgent)){
+   // This is Microsoft Edge
+   // window.alert('Microsoft Edge');
+   $(".sidebar").css({"position": "static"});
+}
+
+
 
 // $(".fade-in").hide();
 // $(".fade-in").hide(5000);
@@ -37,8 +55,11 @@ function adjustForMobile() {
   if (isMobile.matches) {
     //Conditional script here
     $("div #desktopMenu").attr("id", "mobileMenu");                     //change to mobile menu
-    $("div a.button").attr("class", "mobileButton");                    //change to mobile button
+    $("div #desktopNavMenu").attr("id", "mobileNavMenu");               //nav
+    $("div #mobileMenu a.button").attr("class", "mobileButton");                    //change to mobile button
+    $("div a.button").attr("class", "mobileButton");                    //
     $(".menu_button").show();                                           //show mobile menu button
+    $(".nav_menu_button").show();                                           //show mobile nav menu button
     $("#headWrapper").addClass("center");                               //center the head wrapper (for home)
     $("#headWrapperPages").addClass("center");                          //center the head wrapper (for pages)
     $("#logo").attr("id", "mobileLogo");                                //change to mobile logo
@@ -50,9 +71,12 @@ function adjustForMobile() {
   }
   else {
     $("#desktopMenu").show();                         //show desktopMenu
+    $("#desktopNavMenu").show();                         //show desktopNavMenu
     $("div #mobileMenu").attr("id", "desktopMenu");   //change to desktop menu
+    $("div #mobileNavMenu").attr("id", "desktopNavMenu");   //nav
     $("div a.mobileButton").attr("class", "button");  //change to desktop button
     $(".menu_button").hide();                         //hide mobile button
+    $(".nav_menu_button").hide();                         //hide mobile button
     $("#headWrapper").removeClass("center");          //remove headWrapper center (home)
     $("#headWrapperPages").removeClass("center");     //remove headWrapper center (pages)
     $("#mobileLogo").attr("id", "logo");              //change to mobile logo
@@ -66,13 +90,18 @@ $(".sidebar").removeClass("sidebar-mobile");
 
 
 $('#mobileMenu').hide();
+$('#mobileNavMenu').hide();
 
 }
 
 
 
+
 $('.menu_button').on('click', function(){
   $('#mobileMenu').slideToggle(823, "easeOutExpo");
+})
+$('.nav_menu_button').on('click', function(){
+  $('#mobileNavMenu').slideToggle(823, "easeOutExpo");
 })
 
   //alert("click");
