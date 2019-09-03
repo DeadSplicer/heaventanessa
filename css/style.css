@@ -159,7 +159,7 @@ h2 {
   /* word-wrap: break-word; */
 }
 h2 .sidebar-button {
-  font-size: 1.4vw;
+  font-size: 1.7vw;
   /* font-size: 1.2em; */
 }
 
@@ -244,7 +244,7 @@ hr {
 }
 
 #desktopNavMenu {
-
+font-size: 20px;
 }
 
 #mobileMenu {
@@ -340,6 +340,7 @@ footer {
   -moz-transition: color 0.3s;
   /* padding-right: 10px; */
   padding: 0px 5px 0px 5px;
+
   /* background-color: #6fafb7; */
 }
 
@@ -433,4 +434,11 @@ h2 .sidebar-button-mobile {
 }
 .col-sm-2 {
   /* width: 840px; */
+}
+
+.col-md-6 {
+}
+
+.row {
+  padding-left: 20px;
 }
