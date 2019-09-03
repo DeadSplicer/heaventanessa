@@ -142,10 +142,17 @@ h1 {
   color: black;
   margin: auto;
   display:inline-block;
-  font-size: 38px;
+  /* font-size: 38px; */
+  font-size: 2.5em;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: rgba(111,175,183,1);
 }
 
 h2 {
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 100;
   font-size: 2em;
   line-height: 1;
@@ -197,6 +204,24 @@ hr {
   /* background: -moz-linear-gradient(bottom, #f0f0f0, #ffffff);  */
   /* background: linear-gradient(to bottom, #f0f0f0, #ffffff);  */
 
+}
+#indexHeadWrapper {
+  outline: 1px solid white;
+  outline-offset: 5px;
+  background: rgba(255,255,255,.5);
+  text-align: center;
+  padding: 15px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  min-width: 250px;
+}
+#homeHeader {
+  text-align: center;
+  /* width: 80%; */
 }
 #headWrapperPages {
   padding-top: 10px;

@@ -103,6 +103,9 @@ $('.menu_button').on('click', function(){
 $('.nav_menu_button').on('click', function(){
   $('#mobileNavMenu').slideToggle(823, "easeOutExpo");
 })
+$('.trigger').on('click', function(){
+  $('#mobileNavMenu').slideToggle(823, "easeOutExpo");
+})
 
   //alert("click");
 
