@@ -78,7 +78,7 @@ body {
 }
 .fixedbgMobile {
     background-image: url("../images/mobile-background.jpg");
-    min-height:150vh;
+    min-height:120vh;
     background-attachment:fixed;
     background-position: center;
     background-repeat: no-repeat;
