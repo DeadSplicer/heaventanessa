@@ -72,13 +72,13 @@ body {
     background-image: url("../images/desktop-background.jpg");
     min-height:120vh;
     background-attachment:fixed;
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .fixedbgMobile {
-    background-image: url("../images/mobile-background-2.jpg");
-    min-height:120vh;
+    background-image: url("../images/mobile-background.jpg");
+    min-height:150vh;
     background-attachment:fixed;
     background-position: center;
     background-repeat: no-repeat;
