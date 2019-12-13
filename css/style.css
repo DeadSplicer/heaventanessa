@@ -85,12 +85,13 @@ body {
     background-size: cover;
 }
 
-.anchor{
+.mobile-anchor{
   display: block;
-  height: 115px; /*same height as header*/
-  margin-top: -115px; /*same height as header*/
+  height: 490px; /*same height as header*/
+  margin-top: -490px; /*same height as header*/
   visibility: hidden;
 }
+
 
 .container-fluid {
   text-align: center;

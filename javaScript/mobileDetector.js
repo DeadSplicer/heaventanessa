@@ -56,15 +56,16 @@ function adjustForMobile() {
     //Conditional script here
     $("div #desktopMenu").attr("id", "mobileMenu");                     //change to mobile menu
     $("div #desktopNavMenu").attr("id", "mobileNavMenu");               //nav
-    $("div #mobileMenu a.button").attr("class", "mobileButton");                    //change to mobile button
+    $("div #mobileMenu a.button").attr("class", "mobileButton");        //change to mobile button
     $("div a.button").attr("class", "mobileButton");                    //
     $(".menu_button").show();                                           //show mobile menu button
-    $(".nav_menu_button").show();                                           //show mobile nav menu button
+    $(".nav_menu_button").show();                                       //show mobile nav menu button
     $("#headWrapper").addClass("center");                               //center the head wrapper (for home)
     $("#headWrapperPages").addClass("center");                          //center the head wrapper (for pages)
     $("#logo").attr("id", "mobileLogo");                                //change to mobile logo
     $(".fixedbg").attr("class", "fixedbgMobile");                       //change background to mobile
-    $(".sidebar").addClass("sidebar-mobile");                      //change sidebar to mobile
+    $(".sidebar").addClass("sidebar-mobile");                            //change sidebar to mobile
+    $(".col-sm-10 a").addClass("mobile-anchor");                        //Add mobile scroll anchor fix
     $(".sidebar-button").attr("class", "sidebar-button-mobile");        //change sidebar buttons to mobile
     $(".sidebar-mobile h2").css({"font-size": "2em", "margin": "0px", "text-align": "center"});   //change mobile sidebar h2 to center 2em
 
@@ -83,6 +84,8 @@ function adjustForMobile() {
     $(".fixedbgMobile").attr("class", "fixedbg");     //change to dekstop background
     //$(".sidebar-mobile").attr("class", "sidebar");    //change to desktop sidebar
 $(".sidebar").removeClass("sidebar-mobile");
+$(".col-sm-10 a").removeClass("mobile-anchor");                        //remove mobile scroll anchor fix
+
     $(".sidebar-button-mobile").attr("class", "sidebar-button");    //change sidebar buttons to desktop
     $(".sidebar h2").css({"font-size": "inherit", "margin": "inherit", "text-align": "inherit"});   //change sidebar h2 to center 2em
 
