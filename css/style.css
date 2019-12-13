@@ -85,7 +85,12 @@ body {
     background-size: cover;
 }
 
-a.anchor{display: block; position: relative; top: -250px; visibility: hidden;}
+.anchor{
+  display: block;
+  height: 115px; /*same height as header*/
+  margin-top: -115px; /*same height as header*/
+  visibility: hidden;
+}
 
 .container-fluid {
   text-align: center;
