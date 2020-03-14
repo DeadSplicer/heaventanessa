@@ -1,4 +1,4 @@
-var isMobile = window.matchMedia("only screen and (max-width: 768px)");//was 767px 840px
+var isMobile = window.matchMedia("only screen and (max-width: 1110px)");//was 767px 840px recently 768px
 
 //check if the user is using chrome (used to determine how to handle the input)
 function isChrome() {
@@ -21,17 +21,17 @@ function isChrome() {
 
 //Test if user is using MS Edge. Disable sticky sidebar if they are.
 if (/MSIE 10/i.test(navigator.userAgent)) {
-   // This is internet explorer 10
-   // window.alert('isIE10');
+  // This is internet explorer 10
+  // window.alert('isIE10');
 }
 if (/MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {
-    // This is internet explorer 9 or 11
-    // window.location = 'pages/core/ie.htm';
+  // This is internet explorer 9 or 11
+  // window.location = 'pages/core/ie.htm';
 }
 if (/Edge\/\d./i.test(navigator.userAgent)){
-   // This is Microsoft Edge
-   // window.alert('Microsoft Edge');
-   $(".sidebar").css({"position": "static"});
+  // This is Microsoft Edge
+  // window.alert('Microsoft Edge');
+  $(".sidebar").css({"position": "static"});
 }
 
 
@@ -83,8 +83,8 @@ function adjustForMobile() {
     $("#mobileLogo").attr("id", "logo");              //change to mobile logo
     $(".fixedbgMobile").attr("class", "fixedbg");     //change to dekstop background
     //$(".sidebar-mobile").attr("class", "sidebar");    //change to desktop sidebar
-$(".sidebar").removeClass("sidebar-mobile");
-$(".col-sm-10 a").removeClass("mobile-anchor");                        //remove mobile scroll anchor fix
+    $(".sidebar").removeClass("sidebar-mobile");
+    $(".col-sm-10 a").removeClass("mobile-anchor");                        //remove mobile scroll anchor fix
 
     $(".sidebar-button-mobile").attr("class", "sidebar-button");    //change sidebar buttons to desktop
     $(".sidebar h2").css({"font-size": "inherit", "margin": "inherit", "text-align": "inherit"});   //change sidebar h2 to center 2em
@@ -92,8 +92,8 @@ $(".col-sm-10 a").removeClass("mobile-anchor");                        //remove 
   }
 
 
-$('#mobileMenu').hide();
-$('#mobileNavMenu').hide();
+  $('#mobileMenu').hide();
+  $('#mobileNavMenu').hide();
 
 }
 
@@ -110,7 +110,7 @@ $('.trigger').on('click', function(){
   $('#mobileNavMenu').slideToggle(823, "easeOutExpo");
 })
 
-  //alert("click");
+//alert("click");
 
 
 //Nothing happens here, so just jog on. Twat.
@@ -145,8 +145,8 @@ $('.trigger').on('click', function(){
 
 
 /*
- * Youtube video auto-resizer script
- * Created by Skipser.com
+* Youtube video auto-resizer script
+* Created by Skipser.com
 */
 
 // $(document).ready(function() {

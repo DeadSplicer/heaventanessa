@@ -190,7 +190,7 @@ hr {
 }
 
 #logo {
-  padding-left: 150px;
+  padding-left: 300px;
   /*text-align: left;*/
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3),
           0px 8px 13px rgba(0, 0, 0, 0.1),
@@ -246,7 +246,7 @@ hr {
   font-family: 'Source Sans Pro', sans-serif;
   margin-bottom: auto;
   margin-top: auto;
-  padding-right: 150px;
+  padding-right: 300px;
   margin-top: 10px;
   float: right;
 }
@@ -294,11 +294,11 @@ footer {
 }
 
 .sidebar {
-  padding-top: 5em;
+  padding-top: 4em;
   padding-bottom: 5em;
   position: -webkit-sticky;
   position: sticky;
-  top: 10px;
+  top: 0px;
   text-align: left;
 }
 .sidebar-mobile {
